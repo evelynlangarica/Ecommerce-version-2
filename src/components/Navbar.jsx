@@ -4,6 +4,7 @@ import {Search, ShoppingCartOutlined} from "@material-ui/icons";
 import{Badge} from "@material-ui/core"
 import { mobile } from '../responsive';
 import { Link } from "react-router-dom"; 
+import Home from '../pages/Home';
 
 
 
@@ -54,7 +55,8 @@ text-align: center;
 
 const Logo = styled.h1`
     font-weight:bold;
-    ${mobile({fontSize: "24px"})}
+    ${mobile({fontSize: "24px"})};
+    
 `
 
 
@@ -94,7 +96,7 @@ const Navbar = () => {
     <Center><Logo>Book Worm</Logo></Center>
     <Right>
 
-    <Link to="home">
+    <Link to="/" exact>
         <MenuItem>Home </MenuItem>
         </Link>
 
@@ -109,9 +111,6 @@ const Navbar = () => {
       <ShoppingCartOutlined/>
     </Badge>
          </MenuItem>
-
-            
-         <MenuItem> Contact</MenuItem>
 
 
     </Right>
