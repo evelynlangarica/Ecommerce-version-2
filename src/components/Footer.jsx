@@ -62,22 +62,6 @@ const Desc = styled.p`
     margin: 20px 0px;
 `;
 
-const SocialContainer= styled.div`
-    display:flex;
-    margin-right:20px;
-`;
-
-const SocialIcon = styled.div`
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    color:white;
-    background-color: #${props=>props.color};
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin-right:20px;
-`;
 
 
 
@@ -89,7 +73,9 @@ const Footer = () => {
               <Logo> Book Worm</Logo>
               <Desc>
                   Latina Owned Business
+                  
               </Desc>
+              
               <div class="social-container">
                   <a href="https://www.facebook.com/BadBunnyOfficial"
                   className="facebook social">
@@ -121,6 +107,7 @@ const Footer = () => {
                   <ListItem>Home </ListItem>
                   <ListItem>Cart</ListItem>
                   <ListItem>Wishlist</ListItem>
+                  <ListItem>Go Braves!</ListItem>
               </List>
           </Center>
           <Right>
@@ -130,7 +117,7 @@ const Footer = () => {
                   2416 Piedmont Rd NE, Atlanta, GA 30324
               </ContactItem>
               <ContactItem><Phone style={{marginRight:"10px"}}/>(404)-678-7700</ContactItem>
-              <ContactItem><MailOutline  style={{marginRight:"10px"}}/>atlwoe@bookworm.com</ContactItem>
+              <ContactItem><MailOutline  style={{marginRight:"10px"}}/>bookworm@atlstore.com</ContactItem>
           </Right>
       </Container>
     )

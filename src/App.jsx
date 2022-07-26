@@ -2,6 +2,7 @@ import Product from "./pages/Product";
 import Home from "./pages/Home";
 import ProductList from "./pages/ProductList";
 import Products from "./components/Products";
+import Contact from "./components/Contact";
 import {  BrowserRouter,
   Route,
   Routes
@@ -23,6 +24,7 @@ const App = () => {
          
 
          <Route path="/productlist" element={<ProductList/>}/>
+         <Route path ="/contact" element = {<Contact/>}/>
        
         </Routes>
     

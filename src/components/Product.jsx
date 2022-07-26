@@ -1,4 +1,4 @@
-import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from '@material-ui/icons'
+
 import React from 'react'
 import styled from "styled-components"
 
@@ -56,21 +56,7 @@ const Image = styled.img`
    
 `
 
-const Icon = styled.div`
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: white;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    transition: all 0.5s ease &:hover;
-    &:hover {
-        background-color: #e9f5f5;
-        transform: scale(1.1);
-    }
-`
+
 const Desc= styled.p`
     
     position:absolute;
@@ -82,13 +68,20 @@ position:absolute;
 bottom:0;
 
 `
+const Button = styled.button`
+    padding: 5px;
+    font-size:20px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 260px;
+`;
  const Product = ({item}) => {
   return (
     <Container>
         
         <Image src= {item.img}/>
         <Info>
-            <Icon>
+            {/* <Icon>
                 <ShoppingCartOutlined/>
             </Icon>
             <Icon>
@@ -96,7 +89,8 @@ bottom:0;
             </Icon>
             <Icon>
                 <FavoriteBorderOutlined/>
-            </Icon>
+            </Icon> */}
+            <Button>Add to Cart</Button>
         </Info>
         
     <Desc>{item.desc}</Desc>
