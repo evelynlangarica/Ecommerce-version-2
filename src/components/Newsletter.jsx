@@ -51,7 +51,7 @@ font-size: 30px;
 
 `
 
-const Newsletter = () => {
+const Message = () => {
   return (
     <Container>
    
@@ -82,4 +82,4 @@ const Newsletter = () => {
 }
 
 
-export default Newsletter
+export default Message

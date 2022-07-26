@@ -1,7 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ShoppingCartOutlined} from "@material-ui/icons";
-import{Badge} from "@material-ui/core"
 import { mobile } from '../responsive';
 import { Link } from "react-router-dom"; 
 
@@ -69,7 +67,7 @@ const MenuItem = styled.div`
 `
 
 
-const Navbar = () => {
+const Message = () => {
   return (
       
       <Container>
@@ -97,12 +95,7 @@ const Navbar = () => {
             <MenuItem>Contact Us</MenuItem>
         </Link>
 
-        <MenuItem>
-       
-        <Badge badgeContent={4} color="primary">
-      <ShoppingCartOutlined/>
-    </Badge>
-         </MenuItem>
+        
 
 
     </Right>
@@ -111,6 +104,6 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Message
 
 
